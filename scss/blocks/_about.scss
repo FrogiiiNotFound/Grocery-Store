@@ -1,0 +1,147 @@
+.about {
+
+    padding: 60px 0px;
+
+    &__container {
+        display: flex;
+        gap: 100px;
+    }
+
+    &__image {
+        margin-left: -100px;
+    }
+    
+    &__title {
+        position: relative;
+        font-weight: 600;
+        font-size: 49px;
+        line-height: 130%;
+        color: #0a1902;
+        max-width: 452px;
+        margin-bottom: 25px;
+    }
+
+    &__decor {
+        position: absolute;
+        top: 70px;
+        right: 0px;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #0a1902;
+        opacity: 0.7;
+        max-width: 524px;
+        margin-bottom: 46px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 76px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 35px;
+        max-height: 73px;
+        align-items: center;
+    }
+
+    &__number-container {
+        border-radius: 100%;
+        fill: #fff;
+        max-width: 73px;
+        box-shadow: 0 10px 20px 0 rgba(22, 52, 7, 0.05);
+        text-align: center;
+    }
+
+    &__number {
+        padding: 12px 30px;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 140%;
+        color: #82cd5e;
+    }
+
+    &__content-number {
+        font-weight: 500;
+        font-size: 49px;
+        line-height: 130%;
+        color: #82cd5e;
+        border-bottom: 2px solid #59be29;
+        width: 136px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #0a1902;
+        opacity: 0.7;
+    }
+}
+
+@media (max-width: 1250px) {
+    .about {
+        &__container {
+            flex-direction: column-reverse;
+            gap: 60px
+        }
+
+        &__title {
+            text-align: center;
+            margin: 0px auto 25px auto;
+        }
+
+        &__decor {
+            top: 70px;
+            right: -60px;
+        }
+
+        &__subtitle {
+            text-align: center;
+            margin: 0px auto 46px auto;
+        }
+
+        &__list {
+            justify-content: center;
+        }
+
+        &__image {
+            margin: 0px auto;
+        }
+
+        &__image img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .about {
+        &__title {
+            font-size: 43px;
+        }
+
+        &__decor {
+            top: 110px;
+            right: -40px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__number {
+            font-size: 34px;
+        }
+
+        &__content-number {
+            font-size: 45px;
+        }
+    }
+    
+}
